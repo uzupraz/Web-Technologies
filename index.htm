@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First webpage</title>
+</head>
+<body>
+    <h1>Introduction</h1>
+    <!-- <h2>Introduction</h2>
+    <h3>Introduction</h3>
+    <h4>Introduction</h4>
+    <h5>Introduction</h5>
+    <h6>Introduction</h6> -->
+    <!-- <img src="https://www.shutterstock.com/image-photo/banner-kittens-cats-background-animals-260nw-731395711.jpg" alt="Cat"> -->
+    <img src="cat.webp" alt="Cat" id="flip" height="500px" width="800px">
+    <br>
+    <button onclick="change()" >flip</button>
+    <script>
+        function change(){
+            var next=document.getElementById("flip");
+            if (next.src.match("cat.webp"))
+                next.src="another.jpg";
+            else
+                next.src="cat.webp";
+        }
+    </script>
+    <p>
+        Meow Meow Nigga
+    </p>
+</body>
+</html>
