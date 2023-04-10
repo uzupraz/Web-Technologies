@@ -1,0 +1,37 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+.flex{
+    width:100%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center; /* center horizontally */
+    align-items: center; /* center vertically */
+    gap: 30px;
+    vertical-align: top;
+}
+.box{
+    width:350px;
+    height:350px;
+    margin:10px;
+    padding:auto;
+}
+.box1{
+    background-color: yellow;
+}
+.box2{
+    background-color: yellowgreen;
+}
+.box3{
+    background-color: greenyellow;
+}
+.box4{
+    background-color: plum;
+}
+.box5{
+    background-color: lavender;
+}
+.box6{
+    background-color: khaki;
+}

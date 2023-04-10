@@ -1,0 +1,74 @@
+*{
+    font-family: 'Delicious Handrawn', cursive;
+    line-height: 30px;
+    font-size: 25px;;
+}
+.parent{
+    width:100%;
+}
+.son{
+    float:left;
+    width: 50%;
+}
+.daughter{
+    float:right;
+    width: 50%;
+}
+/* mobile */
+@media (min-width:320px) and (max-width:480px) {
+    h1{
+        background-color:tomato;
+        color:white;
+        width:100%;
+        text-align: center;
+    }
+    .son{
+        float:none;
+        width:90%;
+    }
+    .daughter{
+        float: none;
+    }
+    img{
+        width:90%;
+    }
+}
+/* tablet */
+@media (min-width:481px) and (max-width:768px) {
+    h1{
+        background-color:blue;
+        color:bisque;
+        width:100%;
+        text-align: center;
+    }
+    .son{
+        float:none;
+        width:90%;
+    }
+    .daughter{
+        float: none;
+    }
+    img{
+        width:90%;
+    }
+}
+/* laptop */
+@media (min-width:769px) and (max-width:1024px) {
+    h1{
+        background-color:teal;
+        color:rosybrown;
+        width:100%;
+        text-align: center;
+    }
+    .son{
+        float:left;
+        width:50%;
+    }
+    .daughter{
+        float: right;
+        width:45%;
+    }
+    img{
+        width:90%;
+    }
+}
