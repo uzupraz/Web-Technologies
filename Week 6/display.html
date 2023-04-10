@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <style>
+        .div1{
+            background-color: aqua;
+            display:inline-block;
+            width:30%;
+            height:200px;
+        }
+        .span1{
+            background-color: blueviolet;
+        }
+        .span2{
+            background-color: grey;
+        }
+        img{
+            background-color: saddlebrown;
+            display:block;
+        }
+        .div2{
+            display:block;
+            width:50%;
+            background-color: red;
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+    <h1>THIS IS WEEK 6</h1>
+    <div class="div1">
+        I am div1
+    </div>
+    <span class="span1">
+        I am span1
+    </span>
+    <img src="birds.webp" alt="birds" width="50%">
+    <span class="span2">I am span2</span>
+    <div class="div2">I am div2</div>
+    <button onclick="change()">flip</button>
+    <script>
+        function change(){
+            var next=document.getElementByClassName("div2");
+            if (next.style.display ="block")
+                next.style.display = "none";
+            else
+                next.style.display = "block";
+        }
+    </script>
+</body>
+</html>
